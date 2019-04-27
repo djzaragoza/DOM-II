@@ -1,7 +1,8 @@
 // Your code goes here
 
 //event listener = click
-const btn = document.getElementsByClassName('.btn');
+
+const btn = document.getElementsByClassName(`.btn`);
 btn.addEventListener("click", (event) => {btn.style.background = "yellow"});
 console.log(btn);
 
@@ -10,7 +11,13 @@ console.log(btn);
 const a = document.getElementsByClassName('.a');
 
 //event listener = select
-const destination = document.getElementsByClassName('destination');
+const destination = document.querySelectorAll('destination');
+destination.forEach(paragraph => {
+    paragraph.addEventListener('select', (event) => {
+        console.log("event", event);
+        paragraph.style.color = "magenta";
+    })
+})
 
 //event listener for paragraphs = keydown
 const p = document.getElementById('p');
