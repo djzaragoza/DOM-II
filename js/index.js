@@ -22,4 +22,11 @@ const funBus = document.getElementsByTagName('funBus');
 const logoHeading = document.getElementsByClassName('logo-heading');
 
 //event listener = load
-const funBusPage = document.getElements
+const webPage = document.querySelectorAll('webPage');
+
+//event listener = abort
+const pageAbort = document.querySelectorAll('pageAbort');
+
+//event listener = focus
+const destinationImg = document.getElementsByClassName('destinationImg');
+
