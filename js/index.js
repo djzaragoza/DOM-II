@@ -3,7 +3,7 @@
 //event listener = click
 const btn = document.getElementsByClassName('.btn');
 btn.addEventListener("click", (event) => {btn.style.background = "yellow"});
-
+console.log(btn);
 
 
 //event listener = mouseover
