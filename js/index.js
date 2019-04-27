@@ -15,3 +15,11 @@ const p = document.getElementById('p');
 //event listener = blur
 const imgDestination = document.getElementsByTagName('imgDestination');
 
+//event listener = resize
+const funBus = document.getElementsByTagName('funBus');
+
+//event listener = double click
+const logoHeading = document.getElementsByClassName('logo-heading');
+
+//event listener = load
+const funBusPage = document.getElements
