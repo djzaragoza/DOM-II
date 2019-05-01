@@ -2,8 +2,8 @@
 
 const logNew = document.querySelector('.logo-heading');
 
-logNew.addEventListener(`click`, function(event) {
-    console.log(`The Bus is moving fast!`);
+logNew.addEventListener(`click`, function (event) {
+    console.log(logNew);
 })
 
 const headerTwo = document.querySelector('h2');
@@ -30,5 +30,32 @@ newImg.addEventListener('mouseover', function(event) {
     event.preventDefault();
 })
 
+const foot = document.querySelector('footer');
 
+foot.addEventListener('mouseover', function(evebt) {
+    event.target.style.backgroundcolor = 'yellow';
+})
 
+const button = document.querySelector('.btn');
+
+button.addEventListener('mouseover', function(event) {
+    event.target.style.backgroundcolor = 'red';
+})
+
+const bttn = document.getElementById('bttn');
+
+bttn.addEventListener('mouseover', function(event) {
+    event.target.style.backgroundcolor = 'black';
+})
+
+const headFour = document.querySelector('h4');
+
+headFour.addEventListener('mouseover', function(event) {
+    console.log('The event type: $(event.type)');
+})
+
+const headerNew = document.querySelector('.main-navigation');
+
+headerNew.addEventListener('mouseleave', event => {
+    event.target.style.backgroundcolor = 'teal';
+})
